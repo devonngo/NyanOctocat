@@ -451,11 +451,21 @@ th {
   </head>
 
   <body>
+    <button onclick="nyan()">
     <img src="nyantocat.gif" alt="OCTOCAT">
     <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
     <audio autoplay loop>
       <source src="Nyan_Cat.mp3" type="audio/mpeg">
     </audio>
     <p>Fork me on <a href="https://github.com/devonngo/NyanOctocat">GitHub</a></p>
+        <script type="text/javascript" src="ripple.js"></script>
+    </button>
+    
+    <script type="text/javascript">
+      function nyan() {
+        var audio = new Audio('Nyan_Cat.mp3');
+        audio.play();
+      }
+    </script>
   </body>
 </html>
