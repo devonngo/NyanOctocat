@@ -40,19 +40,16 @@
     <title>Nyan Octocat</title>
   </head>
 
-  <body>
+  <body onclick="nyan(); this.onclick=null">
     
     <img src="nyantocat.gif" alt="OCTOCAT">
     <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
     <audio autoplay loop>
       <source src="Nyan_Cat.mp3" type="audio/mpeg">
     </audio>
-    <div>
-      <button class="mobile" onclick="nyan(); this.onclick=null">Mobile? Click Here for Sound</button>
-    </div>
-    <p>Fork me on <a href="https://github.com/devonngo/NyanOctocat">GitHub</a></p>
-        <script type="text/javascript" src="ripple.js"></script>
     
+    <p>Mobile? Tap the image for sound</p>
+    <p>Fork me on <a href="https://github.com/devonngo/NyanOctocat">GitHub</a></p>
     
     <script type="text/javascript">
       function nyan() {
