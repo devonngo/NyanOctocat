@@ -20,9 +20,12 @@
         color: #fff;
         text-align: center;
       }
+      div {
+        text-align: center;
+      }
       
       button {
-        height: 3em;
+        padding: 2em;
       }  
       .mobile {
         display: none;
@@ -43,8 +46,9 @@
     <audio autoplay loop>
       <source src="Nyan_Cat.mp3" type="audio/mpeg">
     </audio>
-    <button class="mobile" onclick="nyan(); this.onclick=null">Mobile? Click Here for Sound
-    </button>
+    <div>
+      <button class="mobile" onclick="nyan(); this.onclick=null">Mobile? Click Here for Sound</button>
+    </div>
     <p>Fork me on <a href="https://github.com/devonngo/NyanOctocat">GitHub</a></p>
         <script type="text/javascript" src="ripple.js"></script>
     
